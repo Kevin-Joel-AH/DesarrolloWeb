@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <link href="Estilos/EstiloPrac3.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <title>Descuento sobre Concesionario</title>
+    </head>
+    <body>
+        <div id="page" class="wrapper">
+            <div class="container-btn-mode">
+                <div id="id-sun" class="btn-mode sun active">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div id="id-moon" class="btn-mode moon">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        <h1>Introduce Marca y Modelo del auto a consultar:</h1>
+        <section id="form">
+            <form>
+                <label>Marca:</label>
+                <input type="text" id="marca" name="marca"><br><br>
+                <label>Modelo:</label>
+                <input type="text" id="modelo" name="modelo"><br><br>
+                <input type="button" value="Consultar" onclick="desc()">
+            </form>
+        </section>
+        <br>
+        <footer>
+            <br><p id="consulta"></p><br>
+        </footer>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/practica3.js"></script>
+</html>

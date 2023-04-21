@@ -1,0 +1,45 @@
+header{
+    background-color: #8e82dc;
+    text-align: center;
+    text-size-adjust: 14;
+    text-overflow: clip;
+    font-family: cursive;
+    border-radius: 10px;
+}
+a{
+    margin: 15px;
+    text-decoration: none;
+}
+a:link{
+    color: #ffffff;
+}
+a:visited{
+    color:midnightblue;
+}
+body{
+    background-color: #dddddd;
+    text-align: center;
+    font-family: cursive;
+}
+p{
+    text-size-adjust: 12;
+}
+img{
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #8e82dc;
+}
+h1{
+    color: white;
+    text-size-adjust: 24;
+}
+h2{
+    color: #528cf9;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+}

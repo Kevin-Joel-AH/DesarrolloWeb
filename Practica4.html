@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <link href="./Estilos/EstiloPrac4.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <title>Calendario</title>
+    </head>
+    <body>
+        <div id="calendario">
+        <h1>Introduce un Mes y un Ano:</h1><br>
+        <h2 id="titulos"></h2>
+        <table id="dias">
+            <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+            <tr id="fila1"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+            <tr id="fila2"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+            <tr id="fila3"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+            <tr id="fila4"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+            <tr id="fila5"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+            <tr id="fila6"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+        </table>
+        <div id="fechaactual"><i onclick="actualizar()">HOY:</i></div>
+        <div id="buscarfecha">
+            <form action="#" name="buscar">
+                <p>Buscar ... Mes
+                    <select name="buscames">
+                        <option value="0">Enero</option>
+                        <option value="1">Febrero</option>
+                        <option value="2">Marzo</option>
+                        <option value="3">Abril</option>
+                        <option value="4">Mayo</option>
+                        <option value="5">Junio</option>
+                        <option value="6">Julio</option>
+                        <option value="7">Agosto</option>
+                        <option value="8">Septiembre</option>
+                        <option value="9">Octubre</option>
+                        <option value="10">Noviembre</option>
+                        <option value="11">Diciembre</option>
+                    </select>
+                    ... Ano ...
+                    <input type="text" name="buscaano" maxlength="4" size="4" />
+                    ...
+                    <input type="button" value="BUSCAR" onclick="mifecha()"/>
+                </p>
+            </form>
+        </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/practica4.js"></script>
+</html>

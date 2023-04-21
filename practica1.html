@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <link href="./Estilos/EstiloPrac1.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <title>Mayor de dos Numeros</title>
+    </head>
+    <body>
+        <div id="page" class="wrapper">
+        <div class="container-btn-mode">
+            <div id="id-sun" class="btn-mode sun active">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div id="id-moon" class="btn-mode moon">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+        <h1>Introduce 2 numeros para identificar el Mayor:</h1>
+        <form>
+            <label>Numero 1:</label>
+            <input type="number" id="num1" name="num1"><br><br>
+            <label>Numero 2:</label>
+            <input type="number" id="num2" name="num2"><br><br>
+            <input type="button" value="Encontrar Mayor" onclick="mayorQue()">
+        </form>
+        <br>
+        <footer>
+            <br><p id="resultado"></p><br>
+        </footer>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/practica1.js"></script>
+</html>

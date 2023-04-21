@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Lista.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Lista de Tareas</title>
+<body id="page">
+    <div id="page" class="wrapper">
+        <div class="container-btn-mode">
+            <div id="id-sun" class="btn-mode sun active">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div id="id-moon" class="btn-mode moon">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    <header>
+        <h1>LISTA DE TAREAS</h1>
+    </header>
+
+    <form action="">
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-circle fa-lg"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">Todo</option>
+                <option value="completed">Terminada</option>
+                <option value="incomplete">Incompleta</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+
+    <script src="js/lista.js"></script>
+    
+</body>
+</html>

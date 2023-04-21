@@ -1,0 +1,186 @@
+body{
+    height: 100vh;
+    background: rgb(164, 164, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.container-btn-mode{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+    font-size:0;
+}
+.btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition: background-color .5s;
+}
+.btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+}
+.btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+}
+.btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.active{
+    background-color:black;
+    color:#ffcd5c !important;
+}
+.calculator{
+    background: rgb(255, 255, 255);
+    width: 25%;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: right;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.display{
+    background: rgb(205, 197, 184);
+    border-radius: 8px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(5, 5, 5);
+	text-size-adjust: 20;
+	text-align: center;
+    padding: 2px;
+    transition: all 0.3s ease-in-out;
+}
+.input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 8px;
+    padding: 5px;
+}
+button{
+    border:none;
+    background-color: rgb(219, 219, 219);
+    padding:1.6rem;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    margin: 1px;
+}
+.item1{
+	border:none;
+    background-color: rgb(216, 71, 71);
+	color:white;
+    padding:1.6rem;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.item2{
+	border:none;
+    background-color: rgb(216, 71, 71);
+	color:white;
+    padding:1.6rem;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.item3{
+	border:none;
+    background-color: rgb(168, 179, 168);
+	color:rgb(8, 8, 8);
+    padding:1.6rem;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.item5{
+	border:none;
+    background-color: rgb(159, 167, 192);
+	color:rgb(14, 13, 13);
+    padding:1.6rem;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.item6{
+	border:none;
+	color:rgb(14, 13, 13);
+    padding:1.6rem;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    font-weight: bold;
+}
+.output{
+    font-size: 28px;
+    padding: 25px;
+}
+.result{
+    font-size: 18px;
+    padding: 25px;
+}
+@keyframes big{
+    0%{
+        font-size: 18px;
+    }
+    100%{
+        font-size: 30px;
+    }
+}
+@keyframes small{
+    0%{
+        font-size: 28px;
+    }
+    100%{
+        font-size: 18px;
+    }
+}
+.dark-mode{
+    background: rgb(19, 19, 19);
+    transition: all 0.3s ease-in-out;
+}
+.dark-mode .calculator{
+    background: rgb(20, 20, 26);
+    box-shadow: 0px 6px 15px rgb(45, 45, 45);
+    transition: all 0.3s ease-in-out;
+}
+.dark-mode .display{
+    background-color: rgb(154, 214, 167);
+	text-size-adjust: 20;
+	text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.dark-mode .item1{
+    background-color: rgb(124, 4, 4);
+    transition: all 0.3s ease-in-out;
+
+}
+.dark-mode .item2{
+    background-color: rgb(124, 4, 4);
+    transition: all 0.3s ease-in-out;
+
+}
+.dark-mode .item3{
+    background-color: rgb(173, 173, 173);
+	color:rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+
+}
+.dark-mode .item5{
+    background-color: rgb(37, 38, 56);
+	color:rgb(245, 236, 236);
+    transition: all 0.3s ease-in-out;
+
+}
+.dark-mode button{
+    background-color: rgb(85, 85, 85);
+	color:rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
